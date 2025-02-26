@@ -1,0 +1,28 @@
+$primary-bg-color: linear-gradient(110.46deg, #70C3FF 12.27%, #4B65FF 93.92%);
+$primary-active-bg-color: #4B65FF;
+
+$lg-width: 240px;
+$lg-height: 48px;
+
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 30px;
+  border: none;
+  padding: 0;
+  user-select: none;
+}
+
+.primary {
+  background: $primary-bg-color;
+  color: #FFFFFF;
+
+  &:active {
+    background: $primary-active-bg-color;
+  }
+}
+
+.lg {
+  width: $lg-width;
+  height: $lg-height;
+}

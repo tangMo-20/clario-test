@@ -1,0 +1,71 @@
+$primary-default-bg-color: #FFFFFF;
+$primary-disabled-bg-color: #151D5133;
+$primary-default-border: 2px solid #151D5133;
+$primary-focused-border: 2px solid #151D51;
+$primary-placeholder-color: #151D51B2;
+
+$lg-width: 315px;
+$lg-height: 48px;
+
+.root {
+  position: relative;
+
+  .input {
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 20px;
+    outline: none;
+  }
+
+  .primary {
+    background: $primary-default-bg-color;
+    border: $primary-default-border;
+
+    &:focus {
+      border: $primary-focused-border;
+    }
+
+    &:disabled {
+      background: $primary-disabled-bg-color;
+    }
+
+    &::placeholder {
+      color: $primary-placeholder-color;
+    }
+  }
+
+  .error {
+    background-color: #FDEFEE;
+    color: #FF8080;
+    border: 2px solid #FF8080
+  }
+
+  .success {
+    color: #27B274;
+    border: 2px solid #27B274
+  }
+
+  .lg {
+    width: $lg-width;
+    height: $lg-height;
+  }
+
+  .password {
+    padding: 0 50px 0 20px;
+  }
+
+  .rightIcon {
+    position: absolute;
+    top: calc(50% - 24px / 2);
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .errorMessage {
+    font-size: 13px;
+    line-height: 18px;
+    color: #FF8080;
+    margin: 8px 20px 0px;
+  }
+}
